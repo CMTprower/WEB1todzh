@@ -3,10 +3,55 @@
 <head>
   <title>WEB1-CSS</title>
   <meta charset="utf-8">
+  <style>
+  body{
+    margin: 0px;
+  }
+    a{
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 70px;
+      text-align: center;
+      border-bottom: 5px black solid;
+      margin: 0px;
+      padding: 40px;
+    }
+    .saw{
+      color:gray;
+    }
+    .strong{
+      font-weight: bolder;
+    }
+    #active{
+      color:Red;
+      text-decoration: underline;
+    }
+    ol, ul{
+      border-right: 3px solid black;
+      width: 100px;
+      margin: 0px;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
 <h1><a href="index.html">WEB</a></h1>
 
+<ul>
+  <li><a href="fakedot.html" class="saw">Dot</a></li>
+  <li><a href="fakeddot.html" class="saw">Ddot</a></li>
+  <li><a href="fakedddot.html" class="saw">Dddot</a></li>
+</ul>
+
+<ol>
+  <li><a href="1.html" class="saw">HTML</a></li>
+  <li><a href="2.html" class= "saw" id="active">CSS</a></li>
+  <li><a href="3.html" class="saw">JavaScript</a></li>
+</ol>
+
+<!--
 <ul>
   <li><a href="fakedot.html">Dot</a></li>
   <li><a href="fakeddot.html">Ddot</a></li>
@@ -15,9 +60,24 @@
 
 <ol>
   <li><a href="1.html">HTML</a></li>
-  <li><a href="2.html">CSS</a></li>
+  <li><a href="2.html" style="color:red; text-decoration:underline">CSS</a></li>
   <li><a href="3.html">JavaScript</a></li>
 </ol>
+-->
+
+<!--
+<ul>
+  <li><a href="fakedot.html"><font color="red">Dot</font></a></li>
+  <li><a href="fakeddot.html"><font color="red">Ddot</font></a></li>
+  <li><a href="fakedddot.html"><font color="red">Dddot</font></a></li>
+</ul>
+
+<ol>
+  <li><a href="1.html"><font color="red">HTML</font></a></li>
+  <li><a href="2.html"><font color="red">CSS</font></a></li>
+  <li><a href="3.html"><font color="red">JavaScript</font></a></li>
+</ol>
+-->
 
 <h2>CSS란?</h2>
 <p><strong>Cascading Style Sheets</strong><br>
@@ -39,3 +99,7 @@ This cascading priority scheme is predictable.<br></p>
 Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998).<br>
 The W3C operates a free CSS validation service for CSS documents.[5]<br>
 In addition to HTML, other markup languages support the use of CSS, including XHTML, plain XML, SVG, and XUL.</p>
+
+<a href="box.html" target="_blank" class="strong">CSS example1</a><br>
+<a href="box2.html" target="_blank" class="strong">CSS example2</a><br>
+<a href="grid.html" target="_blank" class="strong">CSS example3</a>
