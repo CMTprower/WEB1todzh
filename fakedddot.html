@@ -4,6 +4,9 @@
   <title>WEB1-HTML</title>
   <meta charset="utf-8">
   <style>
+  body{
+    margin: 0px;
+  }
     a{
       color:black;
       text-decoration: none;
@@ -11,23 +14,55 @@
     h1 {
       font-size: 70px;
       text-align: center;
+      border-bottom: 5px black solid;
+      margin: 0px;
+      padding: 40px;
     }
-    .saw{
+    #article h2{
+      margin:0px;
+    }
+    /*.saw{
       color:gray;
+    }*/
+    .strong{
+      font-weight: bolder;
     }
     #active{
       color:Red;
       text-decoration: underline;
     }
+    #grid ol, ul{
+      width: 100px;
+      margin: 0px;
+      padding: 20px;
+      padding-left: 40px;
+    }
+
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr 1fr;
+    }
+  #grid #article{
+      padding: 15px;
+      margin: 0px;
+    }
+    .border{
+      border-right: 4px solid black;
+    }
+      /*.batch ol,ul,div{
+      display:grid;
+      grid-template-columns: 0px 0px 150px;
+    }*/
   </style>
 </head>
 <body>
 <h1><a href="index.html">WEB</a></h1>
-
+<div id="grid">
+  <div class="border">
 <ul>
-  <li><a href="fakedot.html" class="saw">Dot</a></li>
-  <li><a href="fakeddot.html" class="saw">Ddot</a></li>
-  <li><a href="fakedddot.html" class="saw" id="active">Dddot</a></li>
+  <li><a href="fakedot.html" class="saw" >Dot</a></li>
+  <li><a href="fakeddot.html" class="saw" id="active">Ddot</a></li>
+  <li><a href="fakedddot.html" class="saw">Dddot</a></li>
 </ul>
 
 <ol>
@@ -35,7 +70,7 @@
   <li><a href="2.html" class= "saw">CSS</a></li>
   <li><a href="3.html" class="saw">JavaScript</a></li>
 </ol>
-
+</div>
 <!--
 <ul>
   <li><a href="fakedot.html">Dot</a></li>
@@ -63,6 +98,10 @@
   <li><a href="3.html"><font color="red">JavaScript</font></a></li>
 </ol>
 -->
-
+<div id="article">
 <h2>It's Fake ooo</h2>
 <img src="dddot.jpg" width="70%">
+</div>
+</div>
+</body>
+</html>

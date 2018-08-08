@@ -18,9 +18,12 @@
       margin: 0px;
       padding: 40px;
     }
-    .saw{
-      color:gray;
+    #article h2{
+      margin:0px;
     }
+    /*.saw{
+      color:gray;
+    }*/
     .strong{
       font-weight: bolder;
     }
@@ -28,29 +31,46 @@
       color:Red;
       text-decoration: underline;
     }
-    ol, ul{
-      border-right: 3px solid black;
+    #grid ol, ul{
       width: 100px;
       margin: 0px;
       padding: 20px;
+      padding-left: 40px;
     }
+
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr 1fr;
+    }
+  #grid #article{
+      padding: 15px;
+      margin: 0px;
+    }
+    .border{
+      border-right: 4px solid black;
+    }
+      /*.batch ol,ul,div{
+      display:grid;
+      grid-template-columns: 0px 0px 150px;
+    }*/
   </style>
 </head>
 <body>
 <h1><a href="index.html">WEB</a></h1>
+<div id="grid">
+  <div class="border">
+  <ul>
+    <li><a href="fakedot.html" class="saw">Dot</a></li>
+    <li><a href="fakeddot.html" class="saw">Ddot</a></li>
+    <li><a href="fakedddot.html" class="saw">Dddot</a></li>
+  </ul>
 
-<ul>
-  <li><a href="fakedot.html" class="saw">Dot</a></li>
-  <li><a href="fakeddot.html" class="saw">Ddot</a></li>
-  <li><a href="fakedddot.html" class="saw">Dddot</a></li>
-</ul>
-
-<ol>
-  <li><a href="1.html" class="saw">HTML</a></li>
-  <li><a href="2.html" class= "saw" id="active">CSS</a></li>
-  <li><a href="3.html" class="saw">JavaScript</a></li>
-</ol>
-
+  <ol>
+    <li><a href="1.html" class="saw">HTML</a></li>
+    <li><a href="2.html" class= "saw" id="active">CSS</a></li>
+    <li><a href="3.html" class="saw">JavaScript</a></li>
+  </ol>
+  </div>
 <!--
 <ul>
   <li><a href="fakedot.html">Dot</a></li>
@@ -78,28 +98,29 @@
   <li><a href="3.html"><font color="red">JavaScript</font></a></li>
 </ol>
 -->
-
-<h2>CSS란?</h2>
-<p><strong>Cascading Style Sheets</strong><br>
-From Wikipedia, the free encyclopedia
-(Redirected from CSS)<br></p>
-<img src="CSS.jpg" width="70%">
-<p><u>Jump to navigationJump to search</u><br>
-"CSS" redirects here. For other uses, see CSS (disambiguation).<br>
-"Pseudo-element" redirects here. For pseudoelement symbols in chemistry, see Skeletal formula § Pseudoelement symbols.
-For the use of CSS on Wikipedia, see Help:Cascading Style Sheets.<br>
-Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
-alongside HTML and JavaScript.[2]<br></p>
-<p><strong>CSS</strong> is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3]<br> This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.<br>
-Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader),
-and on Braille-based tactile devices.<br> CSS also has rules for alternate formatting if the content is accessed on a mobile device.[4]<br>
-The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element<br>
-This cascading priority scheme is predictable.<br></p>
-<p>The CSS specifications are maintained by the World Wide Web Consortium(W3C).<br>
-Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998).<br>
-The W3C operates a free CSS validation service for CSS documents.[5]<br>
-In addition to HTML, other markup languages support the use of CSS, including XHTML, plain XML, SVG, and XUL.</p>
-
-<a href="box.html" target="_blank" class="strong">CSS example1</a><br>
-<a href="box2.html" target="_blank" class="strong">CSS example2</a><br>
-<a href="grid.html" target="_blank" class="strong">CSS example3</a>
+  <div id="article">
+    <h2>CSS란?</h2>
+    <p><strong>Cascading Style Sheets</strong><br>
+    From Wikipedia, the free encyclopedia
+    (Redirected from CSS)<br></p>
+    <img src="CSS.jpg" width="70%">
+    <p><u>Jump to navigationJump to search</u><br>
+    "CSS" redirects here. For other uses, see CSS (disambiguation).<br>
+    "Pseudo-element" redirects here. For pseudoelement symbols in chemistry, see Skeletal formula § Pseudoelement symbols.
+    For the use of CSS on Wikipedia, see Help:Cascading Style Sheets.<br>
+    Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+    alongside HTML and JavaScript.[2]<br></p>
+    <p><strong>CSS</strong> is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3]<br> This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.<br>
+    Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader),
+    and on Braille-based tactile devices.<br> CSS also has rules for alternate formatting if the content is accessed on a mobile device.[4]<br>
+    The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element<br>
+    This cascading priority scheme is predictable.<br></p>
+    <p>The CSS specifications are maintained by the World Wide Web Consortium(W3C).<br>
+    Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998).<br>
+    The W3C operates a free CSS validation service for CSS documents.[5]<br>
+    In addition to HTML, other markup languages support the use of CSS, including XHTML, plain XML, SVG, and XUL.</p>
+    <a href="box.html" target="_blank" class="strong">CSS example1</a><br>
+    <a href="box2.html" target="_blank" class="strong">CSS example2</a><br>
+    <a href="grid.html" target="_blank" class="strong">CSS example3</a>
+  </div>
+</div>
