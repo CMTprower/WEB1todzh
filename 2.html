@@ -3,6 +3,7 @@
 <head>
   <title>WEB1-CSS</title>
   <meta charset="utf-8">
+  <!--
   <style>
   body{
     margin: 0px;
@@ -40,7 +41,7 @@
 
     #grid{
       display: grid;
-      grid-template-columns: 150px 1fr 1fr;
+      grid-template-columns: 150px 1fr;
     }
   #grid #article{
       padding: 15px;
@@ -53,7 +54,20 @@
       display:grid;
       grid-template-columns: 0px 0px 150px;
     }*/
+    @media(max-width:800px){
+      #grid{
+        display: block;
+      }
+      .border{
+        border-right:none;
+      }
+      h1{
+        border-bottom: none;
+      }
+    }
   </style>
+-->
+<link rel="stylesheet" href="Style.css">
 </head>
 <body>
 <h1><a href="index.html">WEB</a></h1>
@@ -121,6 +135,7 @@
     In addition to HTML, other markup languages support the use of CSS, including XHTML, plain XML, SVG, and XUL.</p>
     <a href="box.html" target="_blank" class="strong">CSS example1</a><br>
     <a href="box2.html" target="_blank" class="strong">CSS example2</a><br>
-    <a href="grid.html" target="_blank" class="strong">CSS example3</a>
+    <a href="grid.html" target="_blank" class="strong">CSS example3</a><br>
+    <a href="mediaQL.html" target="_blank" class="strong">CSS example4</a>
   </div>
 </div>

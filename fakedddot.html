@@ -3,6 +3,7 @@
 <head>
   <title>WEB1-HTML</title>
   <meta charset="utf-8">
+<!--
   <style>
   body{
     margin: 0px;
@@ -40,7 +41,7 @@
 
     #grid{
       display: grid;
-      grid-template-columns: 150px 1fr 1fr;
+      grid-template-columns: 150px 1fr;
     }
   #grid #article{
       padding: 15px;
@@ -49,11 +50,24 @@
     .border{
       border-right: 4px solid black;
     }
+    @media(max-width:800px){
+      #grid{
+        display: block;
+      }
+      .border{
+        border-right:none;
+      }
+      h1{
+        border-bottom: none;
+      }
+    }
       /*.batch ol,ul,div{
       display:grid;
       grid-template-columns: 0px 0px 150px;
     }*/
   </style>
+-->
+<link rel="stylesheet" href="Style.css">
 </head>
 <body>
 <h1><a href="index.html">WEB</a></h1>
@@ -61,8 +75,8 @@
   <div class="border">
 <ul>
   <li><a href="fakedot.html" class="saw" >Dot</a></li>
-  <li><a href="fakeddot.html" class="saw" id="active">Ddot</a></li>
-  <li><a href="fakedddot.html" class="saw">Dddot</a></li>
+  <li><a href="fakeddot.html" class="saw">Ddot</a></li>
+  <li><a href="fakedddot.html" class="saw" id="active">Dddot</a></li>
 </ul>
 
 <ol>
